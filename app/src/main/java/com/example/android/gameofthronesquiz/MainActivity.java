@@ -52,16 +52,16 @@ public class MainActivity extends AppCompatActivity {
      */
     private boolean isSwordChecked() {
 
-        RadioButton iceRButton=findViewById(R.id.ice);
+        RadioButton iceRButton=findViewById(R.id.rb_ice);
         boolean isIceChecked=iceRButton.isChecked();
 
-        RadioButton needleRButton=findViewById(R.id.needle);
+        RadioButton needleRButton=findViewById(R.id.rb_needle);
         boolean isNeedleChecked=needleRButton.isChecked();
 
-        RadioButton longclawRButton=findViewById(R.id.longclaw);
+        RadioButton longclawRButton=findViewById(R.id.rb_longclaw);
         boolean isLongclawChecked=longclawRButton.isChecked();
 
-        RadioButton oathkRButton=findViewById(R.id.oathkeeper);
+        RadioButton oathkRButton=findViewById(R.id.rb_oathkeeper);
         boolean isOathkChecked=oathkRButton.isChecked();
 
         return isIceChecked || isNeedleChecked || isLongclawChecked || isOathkChecked;
@@ -72,16 +72,16 @@ public class MainActivity extends AppCompatActivity {
      */
     private boolean isDaenerysChecked() {
 
-        CheckBox stormbornCBox=findViewById(R.id.stormborn);
+        CheckBox stormbornCBox=findViewById(R.id.cb_stormborn);
         boolean isStormbornChecked=stormbornCBox.isChecked();
 
-        CheckBox unburntCBox=findViewById(R.id.unburnt);
+        CheckBox unburntCBox=findViewById(R.id.cb_unburnt);
         boolean isUnburntChecked=unburntCBox.isChecked();
 
-        CheckBox queenCBox=findViewById(R.id.queen);
+        CheckBox queenCBox=findViewById(R.id.cb_queen);
         boolean isQueenChecked=queenCBox.isChecked();
 
-        CheckBox silverCBox=findViewById(R.id.silver);
+        CheckBox silverCBox=findViewById(R.id.cb_silver);
         boolean isSilverChecked=silverCBox.isChecked();
 
         return isStormbornChecked || isUnburntChecked || isQueenChecked || isSilverChecked;
@@ -91,16 +91,16 @@ public class MainActivity extends AppCompatActivity {
      * This method checks if Q3 is answered
      */
     private boolean isJorahChecked() {
-        RadioButton paleButton=findViewById(R.id.mere_dis);
+        RadioButton paleButton=findViewById(R.id.rb_mere_dis);
         boolean isPaleChecked=paleButton.isChecked();
 
-        RadioButton grayscaleButton=findViewById(R.id.scale_dis);
+        RadioButton grayscaleButton=findViewById(R.id.rb_scale_dis);
         boolean isGrayscaleChecked=grayscaleButton.isChecked();
 
-        RadioButton springButton=findViewById(R.id.sickness_dis);
+        RadioButton springButton=findViewById(R.id.rb_sickness_dis);
         boolean isSicknessChecked=springButton.isChecked();
 
-        RadioButton plagueButton=findViewById(R.id.plague_dis);
+        RadioButton plagueButton=findViewById(R.id.rb_plague_dis);
         boolean isPlagueChecked=plagueButton.isChecked();
 
         return isPaleChecked || isGrayscaleChecked || isSicknessChecked || isPlagueChecked;
@@ -128,16 +128,16 @@ public class MainActivity extends AppCompatActivity {
      * This method checks if Q6 is answered
      */
     private boolean isMartellChecked() {
-        RadioButton highgButton=findViewById(R.id.highgarden);
+        RadioButton highgButton=findViewById(R.id.rb_highgarden);
         boolean isHighgChecked=highgButton.isChecked();
 
-        RadioButton dragonstButton=findViewById(R.id.dragonst);
+        RadioButton dragonstButton=findViewById(R.id.rb_dragonst);
         boolean isDragonstChecked=dragonstButton.isChecked();
 
-        RadioButton sunButton=findViewById(R.id.sun);
+        RadioButton sunButton=findViewById(R.id.rb_sun);
         boolean isSunChecked=sunButton.isChecked();
 
-        RadioButton volButton=findViewById(R.id.volantis);
+        RadioButton volButton=findViewById(R.id.rb_volantis);
         boolean isVolChecked=volButton.isChecked();
 
         return isHighgChecked || isDragonstChecked || isSunChecked || isVolChecked;
@@ -147,16 +147,16 @@ public class MainActivity extends AppCompatActivity {
      * This method checks if Q7 is answered
      */
     private boolean isValarChecked() {
-        RadioButton serveButton=findViewById(R.id.must_serve);
+        RadioButton serveButton=findViewById(R.id.rb_must_serve);
         boolean isDieChecked=serveButton.isChecked();
 
-        RadioButton todayButton=findViewById(R.id.must_today);
+        RadioButton todayButton=findViewById(R.id.rb_today);
         boolean isTodayChecked=todayButton.isChecked();
 
-        RadioButton dieButton=findViewById(R.id.must_die);
+        RadioButton dieButton=findViewById(R.id.rb_die);
         boolean isMdieChecked=dieButton.isChecked();
 
-        RadioButton winButton=findViewById(R.id.must_win);
+        RadioButton winButton=findViewById(R.id.rb_win);
         boolean isWinChecked=winButton.isChecked();
 
         return isDieChecked || isTodayChecked || isMdieChecked || isWinChecked;
@@ -166,16 +166,16 @@ public class MainActivity extends AppCompatActivity {
      * This method checks if Q8 is answered
      */
     private boolean isVarysChecked() {
-        CheckBox houndCBox=findViewById(R.id.hound);
+        CheckBox houndCBox=findViewById(R.id.cb_hound);
         boolean isHoundChecked=houndCBox.isChecked();
 
-        CheckBox mountCBox=findViewById(R.id.mountain);
+        CheckBox mountCBox=findViewById(R.id.cb_mountain);
         boolean isMountChecked=mountCBox.isChecked();
 
-        CheckBox spiderCBox=findViewById(R.id.spider);
+        CheckBox spiderCBox=findViewById(R.id.cb_spider);
         boolean isSpiderChecked=spiderCBox.isChecked();
 
-        CheckBox eunuchCBox=findViewById(R.id.eunuch);
+        CheckBox eunuchCBox=findViewById(R.id.cb_eunuch);
         boolean isEunuchChecked=eunuchCBox.isChecked();
 
         return isHoundChecked || isMountChecked || isSpiderChecked || isEunuchChecked;
@@ -185,16 +185,16 @@ public class MainActivity extends AppCompatActivity {
      * This method checks if Q9 is answered
      */
     private boolean isKingChecked() {
-        RadioButton aegonButton=findViewById(R.id.aegon);
+        RadioButton aegonButton=findViewById(R.id.rb_aegon);
         boolean isAegonChecked=aegonButton.isChecked();
 
-        RadioButton aerisButton=findViewById(R.id.aeris);
+        RadioButton aerisButton=findViewById(R.id.rb_aeris);
         boolean isAerisChecked=aerisButton.isChecked();
 
-        RadioButton aemonButton=findViewById(R.id.aemon);
+        RadioButton aemonButton=findViewById(R.id.rb_aemon);
         boolean isAemonChecked=aemonButton.isChecked();
 
-        RadioButton rhaegarButton=findViewById(R.id.rhaegar);
+        RadioButton rhaegarButton=findViewById(R.id.rb_rhaegar);
         boolean isRhaegChecked=rhaegarButton.isChecked();
 
         return isAegonChecked || isAerisChecked || isAemonChecked || isRhaegChecked;
@@ -204,16 +204,16 @@ public class MainActivity extends AppCompatActivity {
      * This method checks if Q10 is answered
      */
     private boolean isWeaponChecked() {
-        CheckBox dragonCBox=findViewById(R.id.dragonglass);
+        CheckBox dragonCBox=findViewById(R.id.cb_dragonglass);
         boolean isDragonglassChecked=dragonCBox.isChecked();
 
-        CheckBox obsidianCBox=findViewById(R.id.obsidian);
+        CheckBox obsidianCBox=findViewById(R.id.cb_obsidian);
         boolean isObsidianChecked=obsidianCBox.isChecked();
 
-        CheckBox dragonstoneCBox=findViewById(R.id.dragonstone);
+        CheckBox dragonstoneCBox=findViewById(R.id.cb_dragonstone);
         boolean isDragonstoneChecked=dragonstoneCBox.isChecked();
 
-        CheckBox valyrianCBox=findViewById(R.id.valyrian);
+        CheckBox valyrianCBox=findViewById(R.id.cb_valyrian);
         boolean isValyrianChecked=valyrianCBox.isChecked();
 
         return isDragonglassChecked || isObsidianChecked || isDragonstoneChecked || isValyrianChecked;
@@ -223,49 +223,49 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the "submit" button is clicked.
      */
     public void showScore(View view) {
-        RadioButton iceRButton=findViewById(R.id.ice);
+        RadioButton iceRButton=findViewById(R.id.rb_ice);
         boolean isIceChecked=iceRButton.isChecked();
 
-        CheckBox stormbornCBox=findViewById(R.id.stormborn);
+        CheckBox stormbornCBox=findViewById(R.id.cb_stormborn);
         boolean isStormbornChecked=stormbornCBox.isChecked();
 
-        CheckBox unburntCBox=findViewById(R.id.unburnt);
+        CheckBox unburntCBox=findViewById(R.id.cb_unburnt);
         boolean isUnburntChecked=unburntCBox.isChecked();
 
-        CheckBox silverCBox=findViewById(R.id.silver);
+        CheckBox silverCBox=findViewById(R.id.cb_silver);
         boolean isSilverChecked=silverCBox.isChecked();
 
-        RadioButton grayscaleButton=findViewById(R.id.scale_dis);
+        RadioButton grayscaleButton=findViewById(R.id.rb_scale_dis);
         boolean isGrayscaleChecked=grayscaleButton.isChecked();
 
-        EditText dwName=findViewById(R.id.direwolf_name);
+        EditText dwName=findViewById(R.id.direwolf_edtxt);
         String dWname=dwName.getText().toString();
 
-        EditText guardNumber=findViewById(R.id.kings_guards);
+        EditText guardNumber=findViewById(R.id.kings_guards_edtxt);
         String guardNum=guardNumber.getText().toString();
 
-        RadioButton sunButton=findViewById(R.id.sun);
+        RadioButton sunButton=findViewById(R.id.rb_sun);
         boolean isSunChecked=sunButton.isChecked();
 
-        RadioButton dieButton=findViewById(R.id.must_die);
+        RadioButton dieButton=findViewById(R.id.rb_die);
         boolean isDieChecked=dieButton.isChecked();
 
-        CheckBox spiderCBox=findViewById(R.id.spider);
+        CheckBox spiderCBox=findViewById(R.id.cb_spider);
         boolean isSpiderChecked=spiderCBox.isChecked();
 
-        CheckBox eunuchCBox=findViewById(R.id.eunuch);
+        CheckBox eunuchCBox=findViewById(R.id.cb_eunuch);
         boolean isEunuchChecked=eunuchCBox.isChecked();
 
-        RadioButton aerisButton=findViewById(R.id.aeris);
+        RadioButton aerisButton=findViewById(R.id.rb_aeris);
         boolean isAerisChecked=aerisButton.isChecked();
 
-        CheckBox dragonCBox=findViewById(R.id.dragonglass);
+        CheckBox dragonCBox=findViewById(R.id.cb_dragonglass);
         boolean isDragonglassChecked=dragonCBox.isChecked();
 
-        CheckBox obsidianCBox=findViewById(R.id.obsidian);
+        CheckBox obsidianCBox=findViewById(R.id.cb_obsidian);
         boolean isObsidianChecked=obsidianCBox.isChecked();
 
-        CheckBox valyrianCBox=findViewById(R.id.valyrian);
+        CheckBox valyrianCBox=findViewById(R.id.cb_valyrian);
         boolean isValyrianChecked=valyrianCBox.isChecked();
 
         int points=calculateScore(isIceChecked, isStormbornChecked, isUnburntChecked, isSilverChecked, isGrayscaleChecked, isDirewolf(dWname), isSunChecked, isDieChecked, isSpiderChecked, isEunuchChecked, isAerisChecked, isKingsguard(guardNum), isDragonglassChecked, isObsidianChecked, isValyrianChecked);

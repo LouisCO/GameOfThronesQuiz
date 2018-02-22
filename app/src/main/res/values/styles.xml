@@ -9,13 +9,13 @@
         <item name="android:typeface">sans</item>
     </style>
 
-    <style name="bckg_style">
+    <style name="bckg_style" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:scaleType">center</item>
     </style>
 
-    <style name="intro_text_style">
+    <style name="intro_text_style" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/background</item>
@@ -26,23 +26,23 @@
         <item name="android:textSize">@dimen/bb_text</item>
     </style>
 
-    <style name="intro_text_style1" parent="intro_text_style">
+    <style name="intro_text_style1" parent="@style/intro_text_style">
         <item name="android:layout_marginTop">@dimen/top</item>
         <item name="android:background">@drawable/text_bckg_up</item>
-        <item name="android:fontFamily">@font/gameot</item>
         <item name="android:paddingTop">@dimen/q_pad</item>
     </style>
 
-    <style name="intro3_text_style">
+    <style name="intro3_text_style" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/text_bckg_down</item>
         <item name="android:gravity">center</item>
         <item name="android:paddingBottom">@dimen/button_margins</item>
         <item name="android:textSize">@dimen/question_size</item>
+
     </style>
 
-    <style name="q_style">
+    <style name="q_style" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/top</item>
@@ -56,14 +56,14 @@
         <item name="android:textSize">@dimen/question_size</item>
     </style>
 
-    <style name="inv_ll_style">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">0dp</item>
+    <style name="inv_ll_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">@dimen/zero</item>
         <item name="android:focusable">true</item>
         <item name="android:focusableInTouchMode">true</item>
     </style>
 
-    <style name="button_style">
+    <style name="button_style" parent="Widget.AppCompat.Button">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
@@ -72,10 +72,10 @@
         <item name="android:fontFamily">@font/gameot</item>
         <item name="android:padding">@dimen/top</item>
         <item name="android:textColor">@android:color/holo_orange_light</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/btn_text</item>
     </style>
 
-    <style name="parent_ll_style">
+    <style name="parent_ll_style" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginLeft">@dimen/top</item>
@@ -87,38 +87,40 @@
         <item name="android:padding">@dimen/top</item>
     </style>
 
-    <style name="rg_style">
+    <style name="rg_style" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/text_bckg_down</item>
     </style>
 
-    <style name="rb_style">
+    <style name="rb_style" parent="Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:checked">false</item>
     </style>
 
-    <style name="chbox_ll_style">
+    <style name="chbox_ll_style" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@color/background</item>
         <item name="android:orientation">horizontal</item>
     </style>
 
-    <style name="chbox_style">
+    <style name="chbox_style" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    <style name="etxt_style" parent="rg_style">
+    <style name="etxt_style" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:inputType">textCapWords</item>
-        <item name="android:maxLength">10</item>
+        <item name="android:maxLength">@dimen/edtxt_long</item>
         <item name="android:paddingStart">@dimen/q_pad</item>
     </style>
 
-    <style name="etxt2_style" parent="etxt_style">
+    <style name="etxt2_style" parent="@style/etxt_style">
         <item name="android:inputType">phone</item>
-        <item name="android:maxLength">1</item>
+        <item name="android:maxLength">@dimen/edtxt_short</item>
     </style>
 </resources>

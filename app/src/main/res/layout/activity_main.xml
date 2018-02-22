@@ -44,26 +44,26 @@
                 android:text="@string/stark_sword" />
 
             <RadioGroup
-                android:id="@+id/sword"
+                android:id="@+id/rg_sword"
                 style="@style/rg_style">
 
                 <RadioButton
-                    android:id="@+id/needle"
+                    android:id="@+id/rb_needle"
                     style="@style/rb_style"
                     android:text="@string/needle" />
 
                 <RadioButton
-                    android:id="@+id/ice"
+                    android:id="@+id/rb_ice"
                     style="@style/rb_style"
                     android:text="@string/ice" />
 
                 <RadioButton
-                    android:id="@+id/longclaw"
+                    android:id="@+id/rb_longclaw"
                     style="@style/rb_style"
                     android:text="@string/longclaw" />
 
                 <RadioButton
-                    android:id="@+id/oathkeeper"
+                    android:id="@+id/rb_oathkeeper"
                     style="@style/rb_style"
                     android:text="@string/oathkeeper" />
             </RadioGroup>
@@ -76,7 +76,7 @@
             <LinearLayout style="@style/chbox_ll_style">
 
                 <CheckBox
-                    android:id="@+id/stormborn"
+                    android:id="@+id/cb_stormborn"
                     style="@style/chbox_style" />
 
                 <TextView
@@ -87,7 +87,7 @@
             <LinearLayout style="@style/chbox_ll_style">
 
                 <CheckBox
-                    android:id="@+id/unburnt"
+                    android:id="@+id/cb_unburnt"
                     style="@style/chbox_style" />
 
                 <TextView
@@ -98,7 +98,7 @@
             <LinearLayout style="@style/chbox_ll_style">
 
                 <CheckBox
-                    android:id="@+id/queen"
+                    android:id="@+id/cb_queen"
                     style="@style/chbox_style" />
 
                 <TextView
@@ -111,7 +111,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/silver"
+                    android:id="@+id/cb_silver"
                     style="@style/chbox_style" />
 
                 <TextView
@@ -128,22 +128,22 @@
                 style="@style/rg_style">
 
                 <RadioButton
-                    android:id="@+id/mere_dis"
+                    android:id="@+id/rb_mere_dis"
                     style="@style/rb_style"
                     android:text="@string/mere" />
 
                 <RadioButton
-                    android:id="@+id/scale_dis"
+                    android:id="@+id/rb_scale_dis"
                     style="@style/rb_style"
                     android:text="@string/grayscale" />
 
                 <RadioButton
-                    android:id="@+id/sickness_dis"
+                    android:id="@+id/rb_sickness_dis"
                     style="@style/rb_style"
                     android:text="@string/sickness" />
 
                 <RadioButton
-                    android:id="@+id/plague_dis"
+                    android:id="@+id/rb_plague_dis"
                     style="@style/rb_style"
                     android:text="@string/plague" />
             </RadioGroup>
@@ -159,7 +159,7 @@
                 tools:ignore="UselessLeaf" />
 
             <EditText
-                android:id="@+id/direwolf_name"
+                android:id="@+id/direwolf_edtxt"
                 style="@style/etxt_style"
                 android:hint="@string/type" />
 
@@ -168,7 +168,7 @@
                 android:text="@string/kingsguard" />
 
             <EditText
-                android:id="@+id/kings_guards"
+                android:id="@+id/kings_guards_edtxt"
                 style="@style/etxt2_style"
                 android:hint="@string/type" />
 
@@ -182,22 +182,22 @@
                 style="@style/rg_style">
 
                 <RadioButton
-                    android:id="@+id/highgarden"
+                    android:id="@+id/rb_highgarden"
                     style="@style/rb_style"
                     android:text="@string/highgarden" />
 
                 <RadioButton
-                    android:id="@+id/dragonst"
+                    android:id="@+id/rb_dragonst"
                     style="@style/rb_style"
                     android:text="@string/dragonstone" />
 
                 <RadioButton
-                    android:id="@+id/sun"
+                    android:id="@+id/rb_sun"
                     style="@style/rb_style"
                     android:text="@string/sunspear" />
 
                 <RadioButton
-                    android:id="@+id/volantis"
+                    android:id="@+id/rb_volantis"
                     style="@style/rb_style"
                     android:text="@string/volantis" />
             </RadioGroup>
@@ -211,22 +211,22 @@
                 style="@style/rg_style">
 
                 <RadioButton
-                    android:id="@+id/must_serve"
+                    android:id="@+id/rb_must_serve"
                     style="@style/rb_style"
                     android:text="@string/serve" />
 
                 <RadioButton
-                    android:id="@+id/must_today"
+                    android:id="@+id/rb_today"
                     style="@style/rb_style"
                     android:text="@string/today" />
 
                 <RadioButton
-                    android:id="@+id/must_die"
+                    android:id="@+id/rb_die"
                     style="@style/rb_style"
                     android:text="@string/die" />
 
                 <RadioButton
-                    android:id="@+id/must_win"
+                    android:id="@+id/rb_win"
                     style="@style/rb_style"
                     android:text="@string/win" />
             </RadioGroup>
@@ -238,7 +238,7 @@
             <LinearLayout style="@style/chbox_ll_style">
 
                 <CheckBox
-                    android:id="@+id/hound"
+                    android:id="@+id/cb_hound"
                     style="@style/chbox_style" />
 
                 <TextView
@@ -249,7 +249,7 @@
             <LinearLayout style="@style/chbox_ll_style">
 
                 <CheckBox
-                    android:id="@+id/mountain"
+                    android:id="@+id/cb_mountain"
                     style="@style/chbox_style" />
 
                 <TextView
@@ -260,7 +260,7 @@
             <LinearLayout style="@style/chbox_ll_style">
 
                 <CheckBox
-                    android:id="@+id/spider"
+                    android:id="@+id/cb_spider"
                     style="@style/chbox_style" />
 
                 <TextView
@@ -273,7 +273,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/eunuch"
+                    android:id="@+id/cb_eunuch"
                     style="@style/chbox_style" />
 
                 <TextView
@@ -290,22 +290,22 @@
                 style="@style/rg_style">
 
                 <RadioButton
-                    android:id="@+id/aegon"
+                    android:id="@+id/rb_aegon"
                     style="@style/rb_style"
                     android:text="@string/aegon" />
 
                 <RadioButton
-                    android:id="@+id/aeris"
+                    android:id="@+id/rb_aeris"
                     style="@style/rb_style"
                     android:text="@string/aeris" />
 
                 <RadioButton
-                    android:id="@+id/aemon"
+                    android:id="@+id/rb_aemon"
                     style="@style/rb_style"
                     android:text="@string/aemon" />
 
                 <RadioButton
-                    android:id="@+id/rhaegar"
+                    android:id="@+id/rb_rhaegar"
                     style="@style/rb_style"
                     android:text="@string/rhaegar" />
             </RadioGroup>
@@ -317,7 +317,7 @@
             <LinearLayout style="@style/chbox_ll_style">
 
                 <CheckBox
-                    android:id="@+id/dragonglass"
+                    android:id="@+id/cb_dragonglass"
                     style="@style/chbox_style" />
 
                 <TextView
@@ -328,7 +328,7 @@
             <LinearLayout style="@style/chbox_ll_style">
 
                 <CheckBox
-                    android:id="@+id/obsidian"
+                    android:id="@+id/cb_obsidian"
                     style="@style/chbox_style" />
 
                 <TextView
@@ -339,7 +339,7 @@
             <LinearLayout style="@style/chbox_ll_style">
 
                 <CheckBox
-                    android:id="@+id/dragonstone"
+                    android:id="@+id/cb_dragonstone"
                     style="@style/chbox_style" />
 
                 <TextView
@@ -353,7 +353,7 @@
                 tools:ignore="TooManyViews">
 
                 <CheckBox
-                    android:id="@+id/valyrian"
+                    android:id="@+id/cb_valyrian"
                     style="@style/chbox_style" />
 
                 <TextView
