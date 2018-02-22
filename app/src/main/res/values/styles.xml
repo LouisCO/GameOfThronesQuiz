@@ -115,12 +115,12 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:inputType">textCapWords</item>
-        <item name="android:maxLength">@dimen/edtxt_long</item>
+        <item name="android:maxLength">10</item>
         <item name="android:paddingStart">@dimen/q_pad</item>
     </style>
 
     <style name="etxt2_style" parent="@style/etxt_style">
         <item name="android:inputType">phone</item>
-        <item name="android:maxLength">@dimen/edtxt_short</item>
+        <item name="android:maxLength">1</item>
     </style>
 </resources>
