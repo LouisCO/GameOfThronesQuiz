@@ -47,10 +47,10 @@
     <string name="win">You win or you die </string>
     <string name="submit">Check\u0020 your\u0020 answers</string>
     <string name="retake">Try\u0020 again</string>
-    <string name="result1">Your score is <xliff:g example="2" id="points">%d</xliff:g> out of 15. \"You know nothing, Jon Snow!\"</string>
-    <string name="result2">Your score is <xliff:g example="7" id="points">%d</xliff:g> out of 15. \"Shame!\.\.\.Shame!\.\.\.Shame!\.\.\.\"</string>
-    <string name="result3">Your score is <xliff:g example="11" id="points">%d</xliff:g> out of 15. \"That’s what I do. I drink, and I know things.\"</string>
-    <string name="result4">Your score is <xliff:g example="15" id="points">%d</xliff:g> out of 15. You could help GRRM finish the ASoIaF series sooner.</string>
+    <string name="result1">Your score is <xliff:g example="2" id="points">%d</xliff:g> out of 10. \"You know nothing, Jon Snow!\"</string>
+    <string name="result2">Your score is <xliff:g example="5" id="points">%d</xliff:g> out of 10. \"Shame!\.\.\.Shame!\.\.\.Shame!\.\.\.\"</string>
+    <string name="result3">Your score is <xliff:g example="8" id="points">%d</xliff:g> out of 10. \"That’s what I do. I drink, and I know things.\"</string>
+    <string name="result4">Your score is <xliff:g example="10" id="points">%d</xliff:g> out of 10. You could help GRRM finish the ASoIaF series sooner.</string>
     <string name="omission">You skipped at least one question</string>
     <string name="got">#</string>
     <string name="welcome_cont">quiz</string>

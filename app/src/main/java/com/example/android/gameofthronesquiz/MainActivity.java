@@ -235,6 +235,9 @@ public class MainActivity extends AppCompatActivity {
         CheckBox silverCBox=findViewById(R.id.cb_silver);
         boolean isSilverChecked=silverCBox.isChecked();
 
+        CheckBox queenCBox=findViewById(R.id.cb_queen);
+        boolean isQueenChecked=queenCBox.isChecked();
+
         RadioButton grayscaleButton=findViewById(R.id.rb_scale_dis);
         boolean isGrayscaleChecked=grayscaleButton.isChecked();
 
@@ -249,6 +252,12 @@ public class MainActivity extends AppCompatActivity {
 
         RadioButton dieButton=findViewById(R.id.rb_die);
         boolean isDieChecked=dieButton.isChecked();
+
+        CheckBox houndCBox=findViewById(R.id.cb_hound);
+        boolean isHoundChecked=houndCBox.isChecked();
+
+        CheckBox mountCBox=findViewById(R.id.cb_mountain);
+        boolean isMountChecked=mountCBox.isChecked();
 
         CheckBox spiderCBox=findViewById(R.id.cb_spider);
         boolean isSpiderChecked=spiderCBox.isChecked();
@@ -265,18 +274,21 @@ public class MainActivity extends AppCompatActivity {
         CheckBox obsidianCBox=findViewById(R.id.cb_obsidian);
         boolean isObsidianChecked=obsidianCBox.isChecked();
 
+        CheckBox dragonstoneCBox=findViewById(R.id.cb_dragonstone);
+        boolean isDragonstoneChecked=dragonstoneCBox.isChecked();
+
         CheckBox valyrianCBox=findViewById(R.id.cb_valyrian);
         boolean isValyrianChecked=valyrianCBox.isChecked();
 
-        int points=calculateScore(isIceChecked, isStormbornChecked, isUnburntChecked, isSilverChecked, isGrayscaleChecked, isDirewolf(dWname), isSunChecked, isDieChecked, isSpiderChecked, isEunuchChecked, isAerisChecked, isKingsguard(guardNum), isDragonglassChecked, isObsidianChecked, isValyrianChecked);
+        int points=calculateScore(isIceChecked, isStormbornChecked, isUnburntChecked, isSilverChecked, isQueenChecked, isGrayscaleChecked, isDirewolf(dWname), isSunChecked, isDieChecked, isHoundChecked, isMountChecked,isSpiderChecked, isEunuchChecked, isAerisChecked, isKingsguard(guardNum), isDragonglassChecked, isObsidianChecked, isValyrianChecked, isDragonstoneChecked);
 
-        if (points < 5 && isQuizChecked(isSwordChecked(), isDaenerysChecked(), isNymeria(dWname), isJorahChecked(), isKnightsNum(guardNum), isMartellChecked(), isValarChecked(), isVarysChecked(), isKingChecked(), isWeaponChecked()))
+        if (points < 4 && isQuizChecked(isSwordChecked(), isDaenerysChecked(), isNymeria(dWname), isJorahChecked(), isKnightsNum(guardNum), isMartellChecked(), isValarChecked(), isVarysChecked(), isKingChecked(), isWeaponChecked()))
             Toast.makeText(this, getString(R.string.result1, points), Toast.LENGTH_LONG).show();
-        else if (points >= 5 && points < 11 && isQuizChecked(isSwordChecked(), isDaenerysChecked(), isNymeria(dWname), isJorahChecked(), isKnightsNum(guardNum), isMartellChecked(), isValarChecked(), isVarysChecked(), isKingChecked(), isWeaponChecked()))
+        else if (points >= 4 && points < 7 && isQuizChecked(isSwordChecked(), isDaenerysChecked(), isNymeria(dWname), isJorahChecked(), isKnightsNum(guardNum), isMartellChecked(), isValarChecked(), isVarysChecked(), isKingChecked(), isWeaponChecked()))
             Toast.makeText(this, getString(R.string.result2, points), Toast.LENGTH_LONG).show();
-        else if (points >= 11 && points < 15 && isQuizChecked(isSwordChecked(), isDaenerysChecked(), isNymeria(dWname), isJorahChecked(), isKnightsNum(guardNum), isMartellChecked(), isValarChecked(), isVarysChecked(), isKingChecked(), isWeaponChecked()))
+        else if (points >= 7 && points < 10 && isQuizChecked(isSwordChecked(), isDaenerysChecked(), isNymeria(dWname), isJorahChecked(), isKnightsNum(guardNum), isMartellChecked(), isValarChecked(), isVarysChecked(), isKingChecked(), isWeaponChecked()))
             Toast.makeText(this, getString(R.string.result3, points), Toast.LENGTH_LONG).show();
-        else if (points == 15 && isQuizChecked(isSwordChecked(), isDaenerysChecked(), isNymeria(dWname), isJorahChecked(), isKnightsNum(guardNum), isMartellChecked(), isValarChecked(), isVarysChecked(), isKingChecked(), isWeaponChecked()))
+        else if (points == 10 && isQuizChecked(isSwordChecked(), isDaenerysChecked(), isNymeria(dWname), isJorahChecked(), isKnightsNum(guardNum), isMartellChecked(), isValarChecked(), isVarysChecked(), isKingChecked(), isWeaponChecked()))
             Toast.makeText(this, getString(R.string.result4, points), Toast.LENGTH_SHORT).show();
         else Toast.makeText(this, getString(R.string.omission), Toast.LENGTH_LONG).show();
     }
@@ -322,28 +334,23 @@ public class MainActivity extends AppCompatActivity {
      * @return total points
      */
     private int calculateScore(boolean isIceChecked, boolean isStormbornChecked,
-                               boolean isUnburntChecked, boolean isSilverChecked, boolean isDirewolf, boolean isSunChecked,
-                               boolean isGrayscaleChecked, boolean isDieChecked, boolean isSpiderChecked,
+                               boolean isUnburntChecked, boolean isSilverChecked, boolean isQueenChecked, boolean isDirewolf, boolean isSunChecked,
+                               boolean isGrayscaleChecked, boolean isDieChecked, boolean isHoundChecked, boolean isMountChecked, boolean isSpiderChecked,
                                boolean isEunuchChecked, boolean isAerisChecked, boolean isKingsguard,
-                               boolean isDragonglassChecked, boolean isObsidianChecked, boolean isValyrianChecked) {
+                               boolean isDragonglassChecked, boolean isObsidianChecked, boolean isValyrianChecked, boolean isDragonstoneChecked) {
 
         int points=0;
 
         if (isIceChecked) points++;
-        if (isStormbornChecked) points++;
-        if (isUnburntChecked) points++;
-        if (isSilverChecked) points++;
+        if ((isStormbornChecked) && (isUnburntChecked) && (isSilverChecked) && !(isQueenChecked)) points++;
         if (isDirewolf) points++;
         if (isSunChecked) points++;
         if (isGrayscaleChecked) points++;
         if (isDieChecked) points++;
-        if (isSpiderChecked) points++;
-        if (isEunuchChecked) points++;
+        if ((isSpiderChecked) && (isEunuchChecked) && !(isHoundChecked) && !(isMountChecked)) points++;
         if (isAerisChecked) points++;
         if (isKingsguard) points++;
-        if (isDragonglassChecked) points++;
-        if (isObsidianChecked) points++;
-        if (isValyrianChecked) points++;
+        if ((isDragonglassChecked) && (isObsidianChecked) && (isValyrianChecked)&& !(isDragonstoneChecked)) points++;
 
         return points;
     }
